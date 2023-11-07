@@ -11,8 +11,8 @@ public class Cliente {
     @Id
     private String id;
     private String nombre;
-    private String apellido;
-    private Integer celular;
+    private String apellidos;
+    private Long celular;
     private String direccion;
     @Column(name = "correo_electronico")
     private String correoElectronico;
@@ -38,18 +38,18 @@ public class Cliente {
     }
 
     public String getApellido() {
-        return apellido;
+        return apellidos;
     }
 
     public void setApellido(String apellido) {
-        this.apellido = apellido;
+        this.apellidos = apellido;
     }
 
-    public Integer getCelular() {
+    public Long getCelular() {
         return celular;
     }
 
-    public void setCelular(Integer celular) {
+    public void setCelular(Long celular) {
         this.celular = celular;
     }
 
